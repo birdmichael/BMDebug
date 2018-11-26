@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BMDebug'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '私有调试工具'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files        = 'BMDebug/**/*.{h,m,mm,c,cpp}'
+  s.source_files        = 'BMDebug/Classes/**/*.{h,m,mm,c,cpp}'
   s.public_header_files = 'BMDebug/Classes/*.h'
   s.frameworks          = [ "Foundation", "UIKit" ]
   s.library             = [ "xml2", "z", "sqlite3", "c++" ]
