@@ -7,6 +7,7 @@
 //
 
 #import "BMViewController.h"
+#import "BMDebug.h"
 
 @interface BMViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[BMDebugManager sharedInstance] show];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
