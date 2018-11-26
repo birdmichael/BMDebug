@@ -40,6 +40,9 @@
 - RuntimeBrowser
 - FLEX
 
+## TODO
+- App内部快速设置（服务器热切换，用户信息热切换）
+
 ## 使用
 
 ### CocoaPods
@@ -234,9 +237,3 @@ FLEX builds on ideas and inspiration from open source tools that came before it.
 
 ## Contributing
 Please see our [Contributing Guide](https://github.com/Flipboard/FLEX/blob/master/CONTRIBUTING.md).
-
-
-## TODO
-- Swift runtime introspection (swift classes, swift objects on the heap, etc.)
-- Improved file type detection and display in the file browser
-- Add new NSUserDefault key/value pairs on the fly
