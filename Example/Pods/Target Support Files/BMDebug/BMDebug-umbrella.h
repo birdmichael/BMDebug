@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "BMDebug.h"
+#import "BMDebugManager.h"
 
 FOUNDATION_EXPORT double BMDebugVersionNumber;
 FOUNDATION_EXPORT const unsigned char BMDebugVersionString[];

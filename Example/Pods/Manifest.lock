@@ -1,5 +1,5 @@
 PODS:
-  - BMDebug (0.1.0)
+  - BMDebug (1.0.1)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BMDebug: 7225f9c57b237a1a564708f16d411305eabaec59
+  BMDebug: 2ab93212b5042656fc25ea45353e3ae2a1c6fec2
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
 
 PODFILE CHECKSUM: ddb7a773c7bbd62006a3ec0853e21548ae05cb4a
