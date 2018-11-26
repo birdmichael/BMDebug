@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		0CA8457CF376D69A363FB01A /* Pods-BMDebug_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDebug_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BMDebug_Tests/Pods-BMDebug_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		14F40ABD7692311A028F8F30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2BCFE0B8B7715118B9B2E43A /* BMDebug.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BMDebug.podspec; path = ../BMDebug.podspec; sourceTree = "<group>"; };
+		14F40ABD7692311A028F8F30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2BCFE0B8B7715118B9B2E43A /* BMDebug.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BMDebug.podspec; path = ../BMDebug.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4ABA059500EFF9CE35BD4B1B /* Pods_BMDebug_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMDebug_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D82EFE981CB67B580E0CD1 /* Pods-BMDebug_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDebug_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BMDebug_Example/Pods-BMDebug_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BMDebug_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMDebug_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0A7A8A7D4EF8FB3F47C2EA1 /* Pods_BMDebug_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMDebug_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4781FB3860704C0307CCCD5 /* Pods-BMDebug_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDebug_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BMDebug_Example/Pods-BMDebug_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EBC49CC4C1DAB098C0BB3F6F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EBC49CC4C1DAB098C0BB3F6F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F2954639A9BEE39A0369D9DE /* Pods-BMDebug_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMDebug_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BMDebug_Tests/Pods-BMDebug_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = birdmichael;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = TMJHR67HJ2;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -504,6 +507,7 @@
 			baseConfigurationReference = E4781FB3860704C0307CCCD5 /* Pods-BMDebug_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TMJHR67HJ2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMDebug/BMDebug-Prefix.pch";
 				INFOPLIST_FILE = "BMDebug/BMDebug-Info.plist";
@@ -519,6 +523,7 @@
 			baseConfigurationReference = 58D82EFE981CB67B580E0CD1 /* Pods-BMDebug_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TMJHR67HJ2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMDebug/BMDebug-Prefix.pch";
 				INFOPLIST_FILE = "BMDebug/BMDebug-Info.plist";
