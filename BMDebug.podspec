@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BMDebug'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BMDebug.'
+  s.summary          = '私有调试工具'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,9 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/birdmichael/BMDebug.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'BMDebug/Classes/**/*'
+  s.source_files        = 'BMDebug/**/*.{h,m,mm,c,cpp}'
+  s.public_header_files = 'BMDebug/Classes/*.h'
+  s.frameworks          = [ "Foundation", "UIKit" ]
+  s.library             = [ "xml2", "z", "sqlite3", "c++" ]
+  s.xcconfig            = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2", "GCC_ENABLE_CPP_EXCEPTIONS" => "YES" }
   
   # s.resource_bundles = {
   #   'BMDebug' => ['BMDebug/Assets/*.png']

@@ -1,0 +1,6 @@
+framework module BMDebug {
+  umbrella header "BMDebug-umbrella.h"
+
+  export *
+  module * { export * }
+}

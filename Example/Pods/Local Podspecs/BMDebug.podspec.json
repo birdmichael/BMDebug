@@ -1,0 +1,22 @@
+{
+  "name": "BMDebug",
+  "version": "0.1.0",
+  "summary": "A short description of BMDebug.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/birdmichael/BMDebug",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "birdmichael": "229953445@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/birdmichael/BMDebug.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BMDebug/Classes/**/*"
+}
