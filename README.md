@@ -47,7 +47,11 @@
 配置podfile，仅在`Debug`下才会打包，并制定我的这个仓库:
 
 ```
-pod 'FLEX', :configurations => ['Debug'], :git => 'git@github.com:birdmichael/FLEX.git'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/birdmichael/BMDebugRepo.git'
+
+
+pod 'BMDebug', :configurations => ['Debug']
 ```
 
 在AppDelegate中引入框架并初始化Button控制呼出工具条:
@@ -56,7 +60,7 @@ More complete version:
 
 ```objc
 #if DEBUG
-#import "FLEXManager.h"
+#import "BMDebug.h"
 #endif
 
 ...
@@ -72,7 +76,7 @@ More complete version:
         [button setTitle:@"BM" forState:UIControlStateNormal];
         button.titleLabel.font = [UIFont systemFontOfSize:11.f];
         [button setTitleColor:[[UIColor redColor] colorWithAlphaComponent:0.3] forState:UIControlStateNormal];
-        [button addTarget:[FLEXManager sharedManager] action:@selector(showExplorer) forControlEvents:UIControlEventTouchUpInside];
+        [button addTarget:[BMDebugManager sharedInstance] action:@selector(show) forControlEvents:UIControlEventTouchUpInside];
         [[[[UIApplication sharedApplication] delegate] window] addSubview:button];
 
     });
