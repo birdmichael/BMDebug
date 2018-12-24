@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 // BM调试器是否正在显示中
 @property (nonatomic, readonly) BOOL isHidden;
 
+// App Config
+@property (nonatomic, strong) NSObject *appConfig;
+
 // 显示调试器
 - (void)show;
 // 隐藏调试器

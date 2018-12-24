@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BMDebug'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = '私有调试工具'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/birdmichael/BMDebug.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files        = 'BMDebug/Classes/**/*.{h,m,mm,c,cpp}'
   s.public_header_files = 'BMDebug/Classes/*.h'

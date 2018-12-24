@@ -7,9 +7,11 @@
 //
 
 #import "BMViewController.h"
+#import "BMConfig.h"
 #import "BMDebug.h"
 
 @interface BMViewController ()
+@property (nonatomic, strong) BMConfig *config;
 
 @end
 
@@ -18,8 +20,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.config = [BMConfig new];
+    self.config.url = @"123";
+    
     [[BMDebugManager sharedInstance] show];
+    [BMDebugManager sharedInstance].appConfig = self.config;
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)nsdadsadsada {
+    NSLog(@"%@",self.config.url);
 }
 
 - (void)didReceiveMemoryWarning

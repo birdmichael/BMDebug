@@ -6,6 +6,6 @@ target 'BMDebug_Example' do
   target 'BMDebug_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+#    pod 'FBSnapshotTestCase'
   end
 end

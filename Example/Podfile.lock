@@ -1,27 +1,16 @@
 PODS:
-  - BMDebug (1.0.1)
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
+  - BMDebug (1.0.3)
 
 DEPENDENCIES:
   - BMDebug (from `../`)
-  - FBSnapshotTestCase
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   BMDebug:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BMDebug: 2ab93212b5042656fc25ea45353e3ae2a1c6fec2
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  BMDebug: 57263d383bd2bf9355f73ab06f5eda73d23f2b7a
 
-PODFILE CHECKSUM: ddb7a773c7bbd62006a3ec0853e21548ae05cb4a
+PODFILE CHECKSUM: ce6acea27194082eb2d641c130a510394efc8018
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.2

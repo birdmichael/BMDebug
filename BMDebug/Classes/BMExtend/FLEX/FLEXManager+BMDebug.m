@@ -17,6 +17,7 @@
 #import "FLEXObjectExplorerFactory.h"
 #import "BMMethodSwizzling.h"
 #import "BMDebugSystemInfo.h"
+#import "BMAppConfigTableViewController.h"
 
 
 @interface FLEXManager ()
@@ -45,9 +46,6 @@
 
 + (void)bmDebugLoad
 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [FLEXManager sharedManager].explorerViewController.title = @"BM";
-    });
     
     [FLEXManager sharedManager].networkDebuggingEnabled = YES;
     
@@ -69,6 +67,10 @@
         NSString *crashLogPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
         crashLogPath = [[crashLogPath stringByAppendingPathComponent:@"BMDebug"] stringByAppendingPathComponent:@"CrashLog"];
         return [[FLEXFileBrowserTableViewController alloc] initWithPath:crashLogPath];
+    }];
+    
+    [[FLEXManager sharedManager] registerGlobalEntryWithName:@"💟  App Config" viewControllerFutureBlock:^UIViewController *{
+        return [[BMAppConfigTableViewController alloc] init];
     }];
     
 //    💟  App Config
